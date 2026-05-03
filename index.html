@@ -18,15 +18,15 @@
     justify-content: center;
   }
 
-  /* همیشه مربع — اندازه‌اش = کوچیکترین بُعد iframe */
+  /* همیشه مربع — کوچیکتر از iframe برای جا دادن سایه */
   .clock-card {
-    width: 100vmin;
-    height: 100vmin;
+    width: 88vmin;
+    height: 88vmin;
     background: #ffffff;
     border-radius: 14%;
     box-shadow:
-      0 4vmin 12vmin rgba(0, 0, 0, 0.08),
-      0 1vmin 3vmin rgba(0, 0, 0, 0.04),
+      0 3vmin 8vmin rgba(0, 0, 0, 0.08),
+      0 0.8vmin 2vmin rgba(0, 0, 0, 0.04),
       inset 0 0 0 1px rgba(0, 0, 0, 0.03);
     display: flex;
     align-items: center;
@@ -36,20 +36,20 @@
   }
 
   .clock {
-    width: 78vmin;
-    height: 78vmin;
+    width: 68vmin;
+    height: 68vmin;
     position: relative;
   }
 
   .tick {
     position: absolute;
     left: 50%;
-    top: 2.8vmin;
-    width: 0.85vmin;
-    height: 2.8vmin;
+    top: 2.4vmin;
+    width: 0.75vmin;
+    height: 2.4vmin;
     background: #d8d8d8;
     border-radius: 0.4vmin;
-    transform-origin: 50% 36.2vmin;
+    transform-origin: 50% 31.6vmin;
     transform: translateX(-50%);
   }
 
@@ -58,29 +58,29 @@
     left: 50%;
     bottom: 50%;
     transform-origin: 50% 100%;
-    border-radius: 1.5vmin;
+    border-radius: 1.3vmin;
     transition: transform 0.05s cubic-bezier(0.4, 2.3, 0.6, 1);
   }
 
   .hour {
-    width: 2.5vmin;
-    height: 21vmin;
+    width: 2.2vmin;
+    height: 18vmin;
     background: #111;
-    margin-left: -1.25vmin;
+    margin-left: -1.1vmin;
   }
 
   .minute {
-    width: 2vmin;
-    height: 29.5vmin;
+    width: 1.7vmin;
+    height: 26vmin;
     background: #111;
-    margin-left: -1vmin;
+    margin-left: -0.85vmin;
   }
 
   .second {
-    width: 0.85vmin;
-    height: 33vmin;
+    width: 0.75vmin;
+    height: 29vmin;
     background: #d97a3c;
-    margin-left: -0.42vmin;
+    margin-left: -0.37vmin;
     transition: transform 0.1s cubic-bezier(0.4, 2.3, 0.6, 1);
   }
 
@@ -88,12 +88,12 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 4.5vmin;
-    height: 4.5vmin;
+    width: 4vmin;
+    height: 4vmin;
     background: #c98a3a;
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 0 0.7vmin #fff, 0 0.3vmin 0.8vmin rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 0 0.6vmin #fff, 0 0.3vmin 0.8vmin rgba(0, 0, 0, 0.2);
     z-index: 5;
   }
 </style>
